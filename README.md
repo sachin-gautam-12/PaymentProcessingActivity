@@ -32,6 +32,18 @@ The payment process is implemented as a Jetpack Compose `@Composable` using:
 - **@Preview** – Compose UI preview
 
 ## How It Works
+## Output
+
+The following screenshots demonstrate the complete payment flow of the application.
+
+![Payment Processing Flow](payment-flow.png.png)
+
+### Payment Flow
+
+1. **Initial State** – The application starts with the `Ready to Pay` status.
+2. **Payment Verification** – Clicking `Pay Now` starts the 3-second verification process with a progress indicator and countdown timer.
+3. **Transaction Complete** – After successful verification, the status changes to `Transaction Complete`.
+4. **Payment Cancelled** – Clicking `Cancel Payment` stops the verification process and displays `Payment Cancelled`.
 
 ### 1. Initial State
 
